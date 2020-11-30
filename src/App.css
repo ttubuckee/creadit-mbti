@@ -1,19 +1,17 @@
+@import './css/button.css';
 .App {
   text-align: center;
+  display : flex;
+  flex-direction : column;
+  align-items: center;
+  justify-content: center;
+  size: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.page-controller-wrapper {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
+/* .App-header {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,6 +19,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-
+} */

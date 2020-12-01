@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import classNames from 'classnames';
 import Button from './Button';
 import Loading from './Loading';

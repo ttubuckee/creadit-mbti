@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react'
+import React, { createContext } from 'react'
 import Button from './components/Button';
 import Title from './components/Title';
 import Question from './components/Question';
@@ -27,14 +27,16 @@ const App = () => {
       .catch(res => console.log(res)) // err
   /**/
   return (
-    <div className="App">
-      <div className={classNames('contents-wrapper')}>
-        {pageIdx > 0 && pageIdx < 14 && <Title text={`Q${pageIdx}`} style={{margin:'70px 0 35px 0'}}/>}
-        {pageIdx > 0 && pageIdx < 14 && <Question questionIdx={pageIdx-1}/>}
-        {/* {titles.map((text, idx) => <Title text={text} key={idx} style={{margin:'15px 15px'}}/>)} */}
+    <AppContext.Provider value={mbti}>
+      <div className="App">
+        <div className={classNames('contents-wrapper')}>
+          {pageIdx > 0 && pageIdx < 14 && <Title text={`Q${pageIdx}`} style={{margin:'70px 0 35px 0'}}/>}
+          {pageIdx > 0 && pageIdx < 14 && <Question questionIdx={pageIdx-1}/>}
+          {/* {titles.map((text, idx) => <Title text={text} key={idx} style={{margin:'15px 15px'}}/>)} */}
+        </div>
+        <PageController pageIdx={pageIdx} className={classNames('page-controller-wrapper')} onPress={increasePageIdx}/>
       </div>
-      <PageController pageIdx={pageIdx} className={classNames('page-controller-wrapper')} onPress={increasePageIdx}/>
-    </div>
+    </AppContext.Provider>
   );
 }
 

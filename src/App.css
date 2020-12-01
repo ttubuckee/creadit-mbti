@@ -1,4 +1,8 @@
 @import './css/button.css';
+@import './css/rental-info.css';
+@import './css/rental-statistics.css';
+@import './css/class-statistics.css';
+@import './css/today-riding.css';
 .App {
   text-align: center;
   display : flex;
@@ -7,9 +11,8 @@
   justify-content: center;
   size: 10px;
 }
-
 .page-controller-wrapper {
-
+  width : 100%; 
 }
 /* .App-header {
   min-height: 100vh;

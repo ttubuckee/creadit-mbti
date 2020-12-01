@@ -1,0 +1,11 @@
+@media(min-width:375px){
+    .question-wrapper {
+        background-color: #EAEAEA;
+        padding: 23px 13px;
+        
+    }
+
+    .question-text {
+        font-size: 24px;
+    }
+}

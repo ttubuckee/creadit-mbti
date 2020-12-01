@@ -1,0 +1,19 @@
+@media(min-width:375px){
+    .start-wrapper {
+        
+    }
+    .start-img {
+        width: 222px;
+        height: 222px;
+        margin: 147px 0 37px 0;
+    }
+    .start-project-explain {
+        background-color: #EAEAEA;
+        padding: 27px 0px;
+        font-size: 24px;
+        margin-bottom: 66px;
+    }
+    .start-button {
+
+    }
+}

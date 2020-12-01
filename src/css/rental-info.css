@@ -1,3 +1,5 @@
-.rental-info-wrapper {
-    background-color: red;
+@media(min-width:375px){
+    .rental-info-wrapper {
+        background-color: red;
+    }
 }

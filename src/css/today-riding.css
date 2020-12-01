@@ -1,3 +1,5 @@
-.today-riding-wrapper {
-    background-color: red;
+@media(min-width:375px){
+    .today-riding-wrapper {
+        background-color: red;
+    }
 }

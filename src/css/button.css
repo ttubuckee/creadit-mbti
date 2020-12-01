@@ -1,13 +1,11 @@
-.button-set-wrapper {
-    flex-direction: row;
-}
-.button-wrapper {
-    border : 1px solid black;
-    background-color: beige;
-    padding : 5px 20px;
-    cursor: pointer;
-    width : 30%;
-    display: inline-block;
+@media(min-width:375px){
+    .button-wrapper {
+        /* border : 1px solid black; */
+        background-color: #EAEAEA;
+        padding : 5px 20px;
+        cursor: pointer;
+        width : 80%;
+    }
 }
 
 /* .button-wrapper:focus {

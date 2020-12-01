@@ -3,16 +3,26 @@
 @import './css/rental-statistics.css';
 @import './css/class-statistics.css';
 @import './css/today-riding.css';
-.App {
-  text-align: center;
-  display : flex;
-  flex-direction : column;
-  align-items: center;
-  justify-content: center;
-  size: 10px;
-}
-.page-controller-wrapper {
-  width : 100%; 
+@import './css/title.css';
+@import './css/question.css';
+@import './css/start.css';
+@media(min-width:375px){
+  .App {
+    text-align: center;
+    display : flex;
+    flex-direction : column;
+    align-items: center;
+    justify-content: center;
+    size: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .page-controller-wrapper {
+    width : 100%; 
+  }
+  .contents-wrapper {
+    flex-direction: row;
+  }
 }
 /* .App-header {
   min-height: 100vh;

@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-const Button = (props) => {
-    const { text } = props; // props(read-only)
+const QuestionBody = (props) => {
+    const { text, numOfQuestions } = props; // props(read-only)
     React.useEffect(()=>{
         //setTest(true);
     }, [])
@@ -11,4 +11,4 @@ const Button = (props) => {
     </div>)
 }
 
-export default Button;
+export default QuestionBody;

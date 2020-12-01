@@ -1,7 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 const Button = (props) => {
-    const { text } = props;
+    const { text } = props; // props(read-only)
+    console.log(props);
     React.useEffect(()=>{
         //setTest(true);
     }, [])

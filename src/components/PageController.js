@@ -10,13 +10,20 @@ const PageController = (props) => {
     React.useEffect(()=>{
         //setTest(true);
     }, [])
+    const questions = [
+        ['친구를 만난다', '여행을 간다', '요리/베이킹을 한다', '게임을 한다'] /*  questions 1 */,
+        []
+    ]
+    const types = [
+        ['E', 'I', '']
+    ]
     console.log(props);
     switch(props.pageIdx){
         case 0: // start 화면
             return <Start imgSrc={startImgSrc} onPress={props.onPress}/>
             break;
         case 1: // 1번 질문
-            return <QuestionBody numOfQuestions={4} style={{marginTop:'107px', width:'88%'}} onPress={props.onPress} text={'버튼'}/>
+            return <QuestionBody questions={questions[props.pageIdx-1]}/* numOfQuestions={4} */ style={{marginTop:'107px', width:'88%'}} onPress={props.onPress} text={'버튼'}/>
             break;
         default: // case 1~13
             return <QuestionBody numOfQuestions={2} onPress={props.onPress} style={{marginTop:'107px', width:'88%'}} text={'버튼'}/>

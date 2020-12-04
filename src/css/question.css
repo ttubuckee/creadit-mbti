@@ -1,4 +1,4 @@
-@media(min-width:375px){
+@media(max-width:425px){
     .question-wrapper {
         background-color: #EAEAEA;
         padding: 23px 13px;

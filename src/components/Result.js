@@ -5,6 +5,8 @@ const Result = (props) => {
     React.useEffect(()=>{
         //setTest(true);
     }, [])
+    console.log(`type : ${props.result}`)
+    console.log(`mbti : `, props.mbti)
     return(
     <div className={classNames('button-wrapper')} onClick={props.onPress} style={props.style}>
         <div>{text}</div>

@@ -31,12 +31,22 @@ const App = () => {
     setMBTI({...mbti}); 
   } // 'E'
   React.useEffect(()=>{
+    if(pageIdx===0)
+        setMBTI({
+            'E' : 0, 'I' : 0,
+            'N' : 0, 'S' : 0,
+            'T' : 0, 'F' : 0,
+            'P' : 0, 'J' : 0
+        });
+  }, [pageIdx]);
+
+  React.useEffect(()=>{
     console.log(mbti);
     let i = 0 ;
     for(let key in mbti)
       i += mbti[key];
     console.log(`mbti sum : ${i}`)
-  }, [mbti])
+  }, [mbti]);
   
   return (
       windowSize <= 426 ? 

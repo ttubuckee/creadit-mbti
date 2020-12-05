@@ -39,15 +39,16 @@ const App = () => {
   }, [mbti])
   
   return (
-      windowSize <= 425 ? 
+      windowSize <= 426 ? 
       <div className="App">
-        <div className={classNames('contents-wrapper')}>
+        <div className={classNames('contents-wrapper')} style={pageIdx > 0 && pageIdx <= LAST_PAGE_IDX-2 ? {height: 291.4} : {}}>
           {pageIdx > 0 && pageIdx < LAST_PAGE_IDX-1 && <Title text={`Q${pageIdx}`} style={{margin:'70px 0 35px 0'}}/>}
           {pageIdx > 0 && pageIdx < LAST_PAGE_IDX-1 && <Question questionIdx={pageIdx-1}/>}
           {/* {titles.map((text, idx) => <Title text={text} key={idx} style={{margin:'15px 15px'}}/>)} */}
         </div>
         <PageController 
-          pageIdx={pageIdx} 
+          pageIdx={pageIdx}
+          lastPageIdx={LAST_PAGE_IDX} 
           className={classNames('page-controller-wrapper')} 
           onPress={onPressPageController}
           result={pageIdx === LAST_PAGE_IDX && getMbtiType()}

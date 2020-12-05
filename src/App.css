@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
 }
-@media(max-width:425px){
+@media(max-width:426px){
   .App {
     text-align: center;
     display : flex;
@@ -24,16 +24,11 @@
     padding-right: 24px;
   }
   .page-controller-wrapper {
-    width : 100%; 
+    width : 100%;
   }
   .contents-wrapper {
     flex-direction: row;
-  }
-  .question-body-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width : 100%;
   }
 }
 /* .App-header {

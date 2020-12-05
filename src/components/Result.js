@@ -1,36 +1,45 @@
 import React from 'react';
 import classNames from 'classnames';
 import '../css/result.css';
+import { getMBTIResult } from '../modules/GeneralFunction';
 
 const Result = (props) => {
-    const { text } = props; // props(read-only)
+    const { text , result } = props; // props(read-only)
+    const result_obj = getMBTIResult();
+    const getResultObj = (mbti_type) => { // 최종타입정보 객체 반환
+        for(let type in result_obj){
+            if(mbti_type === type) return result_obj[type]; 
+        }
+    }
+    const my_mbti_obj = getResultObj(result);
     React.useEffect(() => {
         //setTest(true);
     }, [])
     console.log(`type : ${props.result}`)
     console.log(`mbti : `, props.mbti)
+
     return(
-        <div className={"div-result-wrapper"}>
-        <div className={"div-project-title"}>프로젝트 이름</div>
-        <div className={"div-result-type"}></div>
+    <div className={"div-result-wrapper"}>
+        <div className={"div-project-title"}><span>프로젝트 이름</span></div>
+        <div className={"div-result-type"}>{result}</div>
         <img className={"img-result-type"}></img>
         <div className={"div-result-des-wrapper"}>
-            <p className={"p-result-des"}></p>
+        <p className={"p-result-des"}>{my_mbti_obj.desc}</p>
         </div>
         <div className={"div-combinations-wrapper"}>
             <div className={"div-best-combi-wrapper"}>
                 <span>최고조합</span>
                 <img className={"img-best-combi"}></img>
-                <span>유형이름</span>
+                <span>{my_mbti_obj["best-combi"]}</span>
             </div>
             <div className={"div-worst-combi-wrapper"}>
                 <span>최악조합</span>
-                <img className={"img-worst-combi"}></img>
-                <span>유형이름</span>
+                <img className={"img-worst-combi"}/>
+                <span>{my_mbti_obj["worst-combi"]}</span>
             </div>
         </div>
         <div className={"div-share"}></div>
-        <button className={"btn-retry"}></button>
+        <div className={"div-retry"} onClick={props.onPress}>다시하기</div>
         <img className={"img-banner"}></img>
         <div className={"div-notion-link"}></div>
     </div>

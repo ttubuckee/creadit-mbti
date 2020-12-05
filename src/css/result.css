@@ -4,18 +4,56 @@
         margin: 0px;
         padding: 0px;
     }
-    .div-project-title {}
-    .div-result-type {}
-    .img-result-type {}
-    .div-result-des-wrapper {}
-    .p-result-des {}
-    .div-combinations-wrapper {}
-    .div-best-combi-wrapper {}
-    .img-best-combi {}
-    .div-worst-combi-wrapper {}
-    .img-worst-combi {}
-    .div-share {}
-    .btn-retry {}
-    .img-banner {}
-    .div-notion-link {}
+    .div-project-title {
+        margin-top: 80px;
+        font-weight: bold;
+    }
+    .div-result-type {
+        margin-top: 14px;
+        font-weight: bold;
+    }
+    .img-result-type {
+        margin-top: 41px;
+        font-weight: bold;
+    }
+    .div-result-des-wrapper {
+        margin-top: 42px;
+    }
+    .p-result-des {
+        
+    }
+    .div-combinations-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; /* 나중에 수정*/
+    }
+    .div-best-combi-wrapper {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .img-best-combi {
+        margin-top: 19px;
+    }
+    .div-worst-combi-wrapper {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    .img-worst-combi {
+        margin-top: 19px;
+    }
+    .div-share {
+        margin-top: 31px;
+    }
+    .div-retry {
+        margin-top: 19px;
+    }
+    .img-banner {
+        margin-top: 34px;
+    }
+    .div-notion-link {
+        margin-top: 29px;
+    }
 }

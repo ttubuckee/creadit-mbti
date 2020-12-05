@@ -1,4 +1,4 @@
-@media(min-width:375px){
+@media(max-width:425px){
     .button-wrapper {
         /* border : 1px solid black; */
         background-color: #EAEAEA;

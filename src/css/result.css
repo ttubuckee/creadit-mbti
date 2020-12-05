@@ -1,0 +1,21 @@
+@media(min-width:375px) {
+    .div-result-wrapper {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .div-project-title {}
+    .div-result-type {}
+    .img-result-type {}
+    .div-result-des-wrapper {}
+    .p-result-des {}
+    .div-combinations-wrapper {}
+    .div-best-combi-wrapper {}
+    .img-best-combi {}
+    .div-worst-combi-wrapper {}
+    .img-worst-combi {}
+    .div-share {}
+    .btn-retry {}
+    .img-banner {}
+    .div-notion-link {}
+}

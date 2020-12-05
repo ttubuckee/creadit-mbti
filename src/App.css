@@ -1,12 +1,18 @@
 @import './css/button.css';
-@import './css/rental-info.css';
-@import './css/rental-statistics.css';
-@import './css/class-statistics.css';
-@import './css/today-riding.css';
 @import './css/title.css';
 @import './css/question.css';
 @import './css/start.css';
-@media(min-width:375px){
+
+/* html, body, #app, #app>div {
+  height: 100%
+} */
+.not-ready-screen {
+  background-color: beige;
+  display : flex;
+  justify-content: center;
+  align-items: center;
+}
+@media(max-width:425px){
   .App {
     text-align: center;
     display : flex;
@@ -22,6 +28,12 @@
   }
   .contents-wrapper {
     flex-direction: row;
+  }
+  .question-body-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 /* .App-header {

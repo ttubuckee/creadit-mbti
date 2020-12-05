@@ -18,7 +18,7 @@ const App = () => {
   const getMbtiType = () => `${getBiggerType('E', 'I')}${getBiggerType('N', 'S')}${getBiggerType('T', 'F')}${getBiggerType('P', 'J')}` // mbti data를 확인하여 mbti 유형을 완성시켜줌
   console.log(getMbtiType()); // 현재 ISFJ 출력
   const [pageIdx, setPageIdx] = React.useState(0); // hooks - 상태 관리를 위한 function 집합
-  const increasePageIdx = () => {setPageIdx((pageIdx+1)%15); console.log(pageIdx)};
+  const increasePageIdx = () => {setPageIdx((pageIdx+1)%16); console.log(pageIdx)};
   React.useEffect(()=>{
   }, [pageIdx])
   const getData = () => // 통신 예시 

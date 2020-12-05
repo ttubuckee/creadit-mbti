@@ -7,6 +7,8 @@ import axios from 'axios';
 import classNames from 'classnames';
 import PageController from './components/PageController';
 import Start from './components/Start';
+import ProgressBar from './components/ProgressBar';
+const AppContext = createContext()
 const App = () => {
   const mbti = {
     'E' : 0, 'I' : 0,
@@ -18,7 +20,7 @@ const App = () => {
   const getMbtiType = () => `${getBiggerType('E', 'I')}${getBiggerType('N', 'S')}${getBiggerType('T', 'F')}${getBiggerType('P', 'J')}` // mbti data를 확인하여 mbti 유형을 완성시켜줌
   console.log(getMbtiType()); // 현재 ISFJ 출력
   const [pageIdx, setPageIdx] = React.useState(0); // hooks - 상태 관리를 위한 function 집합
-  const increasePageIdx = () => {setPageIdx((pageIdx+1)%15); console.log(pageIdx)};
+  const increasePageIdx = () => {setPageIdx((pageIdx+1)%16); console.log(pageIdx)};
   React.useEffect(()=>{
   }, [pageIdx])
   const getData = () => // 통신 예시 
@@ -32,9 +34,11 @@ const App = () => {
         <div className={classNames('contents-wrapper')}>
           {pageIdx > 0 && pageIdx < 14 && <Title text={`Q${pageIdx}`} style={{margin:'70px 0 35px 0'}}/>}
           {pageIdx > 0 && pageIdx < 14 && <Question questionIdx={pageIdx-1}/>}
+          {/* <ProgressBar progress={pageIdx} questions_len={14}/> */}
           {/* {titles.map((text, idx) => <Title text={text} key={idx} style={{margin:'15px 15px'}}/>)} */}
         </div>
         <PageController pageIdx={pageIdx} className={classNames('page-controller-wrapper')} onPress={increasePageIdx}/>
+
       </div>
     </AppContext.Provider>
   );

@@ -20,8 +20,8 @@ const Result = (props) => {
 
     return(
     <div className={"div-result-wrapper"}>
-        <div className={"div-project-title"}><span>프로젝트 이름</span></div>
-        <div className={"div-result-type"}>{result}</div>
+        <div className={"div-project-title"}><span>부캐찾기 프로젝트</span></div>
+        <div className={"div-result-type"}>{my_mbti_obj.type_des}</div>
         <img className={"img-result-type"}></img>
         <div className={"div-result-des-wrapper"}>
         <p className={"p-result-des"}>{my_mbti_obj.desc}</p>

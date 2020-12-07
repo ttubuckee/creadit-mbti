@@ -30,6 +30,7 @@ const App = () => {
     mbti[type]++;
     setMBTI({...mbti}); 
   } // 'E'
+
   React.useEffect(()=>{
     if(pageIdx===0)
         setMBTI({
@@ -47,6 +48,16 @@ const App = () => {
       i += mbti[key];
     console.log(`mbti sum : ${i}`)
   }, [mbti]);
+
+  React.useEffect(()=>{
+    const script = document.createElement('script')
+    script.src = 'https://developers.kakao.com/sdk/js/kakao.js'
+    script.async = true
+    document.body.appendChild(script)
+    return () => {
+      document.body.removeChild(script)
+    }
+  },[])
   
   return (
       windowSize < 769 ? 

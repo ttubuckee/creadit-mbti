@@ -6,6 +6,7 @@ import Result from './Result';
 import Start from './Start';
 import QuestionBody from './QuestionBody';
 import { getMBTIQuestions, getStartImageSource } from '../modules/GeneralFunction';
+
 const PageController = (props) => {
     const startImgSrc = getStartImageSource();
     React.useEffect(()=>{

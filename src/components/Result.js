@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import KakaoShareButton from './KakaoShareButton';
+import Button from './Button';
 import '../css/result.css';
 import { getMBTIResult } from '../modules/GeneralFunction';
 
@@ -12,47 +13,65 @@ const Result = (props) => {
             if(mbti_type === type) return result_obj[type]; 
         }
     }
-      
     const my_mbti_obj = getResultObj(result);
+
+    React.useEffect(()=>{
+        const app = document.getElementsByClassName('App')[0];
+        app.style.padding = '0px';
+    },[]);
 
     console.log(`type : ${props.result}`)
     console.log(`mbti : `, props.mbti)
 
     return(
-    <div className={"div-result-wrapper"}>
-        <div className={"div-project-title"}><span>부캐찾기 프로젝트</span></div>
-        <div className={"div-result-type"}>{my_mbti_obj.type_des}</div>
-        <img className={"img-result-type"}></img>
-        <div className={"div-result-des-wrapper"}>
-        <p className={"p-result-des"}>{my_mbti_obj.desc}</p>
-        </div>
-        <div className={"div-combinations-wrapper"}>
-            <div className={"div-best-combi-wrapper"}>
-                <span>최고조합</span>
-                <img className={"img-best-combi"}></img>
-                <span>{my_mbti_obj["best-combi"]}</span>
+        <div>
+            <img className={"img-logo"} src={'/images/creadit.png'} alt={"creadit-logo"}></img>
+            <div className={"div-project-title"}><span>나의 부캐찾기 프로젝트</span></div>
+            <img className={"img-result-type"} src={'/images/mbti_result/isfj.png'}></img>
+
+            <div className={"div-result-text-wrapper"}>
+                <div className={"div-result-type"}>{my_mbti_obj.type_des}</div>
+                <div className={"div-view-count"}><span style={{color:"#7A7A7A"}}>{Math.floor(Math.random()*20)+50}만 회</span></div>
+                <div className={"div-result-des-wrapper"}>
+                    <p className={"p-result-des"}>{my_mbti_obj.desc}</p>
+                </div>
             </div>
-            <div className={"div-worst-combi-wrapper"}>
-                <span>최악조합</span>
-                <img className={"img-worst-combi"}/>
-                <span>{my_mbti_obj["worst-combi"]}</span>
+            <hr style={{backgroundColor: "#1339FF",height: 1}}/>
+            <div className={"div-comment-wrapper"}>
+                <span>댓글 {Math.floor(Math.random()*500)+500}</span>
+                <div className={"div-comment"}>
+                    <img src={'/images/profile.png'}/>
+                    <div><span>{my_mbti_obj["best-comment"]}</span></div>
+                </div>
             </div>
+            <hr style={{backgroundColor: "#1339FF",height: 1}}/>
+            <div className={"div-combination-title"}><span style={{fontWeight:"bold"}}>최고조합</span><span>&nbsp;&nbsp;&nbsp;{my_mbti_obj["best-combi"]}</span></div>
+            <img className={"img-combi"} src={'/images/mbti_result/isfj.png'}></img>
+            <div className={"div-combination-title"}><span style={{fontWeight:"bold"}}>최악조합</span><span>&nbsp;&nbsp;&nbsp;{my_mbti_obj["worst-combi"]}</span></div>
+            <img className={"img-combi"} src={'/images/mbti_result/isfj.png'}></img>
+    
+            <div className={"div-share"}>
+                <KakaoShareButton/>
+                <a href={"https://twitter.com/intent/tweet?text=hello&url=www.naver.com"}>
+                    트위터
+                </a>
+                <div onClick={()=>{
+                    const dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = window.location.href;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                }}>링크복사<br/>이미지</div>
+            </div>
+            <Button text={'다시하기'} style={{backgroundColor:'#1339FF', color:'white', margin: "0 auto"}} onPress={props.onPress}/>
+            <a href="http://creadit.godomall.com/main/index.php">
+                <img className={"img-banner"} src={'/images/small_banner.png'}></img>
+            </a>
+            <p style={{fontWeight:"bold", textAlign:"left", margin:"0 auto",width:"90%",marginTop:"37px"}}>크리에이터로 성장할 수 있는 곳,<br/>크리에이딧이 궁금하다면?👀</p>
+            <Button text={'📌notion에서 자세히 보기'} style={{backgroundColor:'#010101', color:'white', margin: "0 auto", marginTop:"15px"}} onPress={props.onPress}/>
+            <div className={"div-notion-link"}></div>
         </div>
-        <div className={"div-share"}>
-            <KakaoShareButton/>
-            <div onClick={()=>{
-                const dummy = document.createElement("textarea");
-                document.body.appendChild(dummy);
-                dummy.value = window.location.href;
-                dummy.select();
-                document.execCommand("copy");
-                document.body.removeChild(dummy);
-            }}>링크복사<br/>이미지</div>
-        </div>
-        <div className={"div-retry"} onClick={props.onPress}>다시하기</div>
-        <img className={"img-banner"}></img>
-        <div className={"div-notion-link"}></div>
-    </div>
     )
 }
 

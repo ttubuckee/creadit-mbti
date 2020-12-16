@@ -42,7 +42,6 @@ export const getMBTIQuestions = () => {
     ];
     return questions;
 }
-
 export const getMBTIResult = () => {
     const result_data = {
         "ENFP":{

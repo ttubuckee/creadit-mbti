@@ -1,20 +1,21 @@
 .button-wrapper {
     display: flex;
     justify-content: center;
-    width: 100%;
+    align-items: center;
+    width: 90%;
+    height: 58px;
+    border-radius: 4px;
+    border: 1px solid #1339FF
 }
 .button-text {
     /* border : 1px solid black; */
-    background-color: #EAEAEA;
-    padding : 5px 20px;
     cursor: pointer;
     width : 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.button-text:hover {
-    background-color: beige;
+    font-size: 14px;
+    font-weight: bold;
 }
 .button-set-wrapper {
     display: flex;

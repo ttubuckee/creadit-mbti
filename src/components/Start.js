@@ -7,13 +7,15 @@ const Start = (props) => {
         //setTest(true);
     }, [])
     return(
-    <div className={classNames('start-wrapper')} style={props.style}>
-        <img src={props.imgSrc} className={classNames('start-img')}/>
-        <div className={classNames('start-project-explain')}>
-            {`프로젝트 설명글`}
+    <>
+        <div className={classNames('start-wrapper')} style={props.style}>
+            <img src={props.imgSrc} className={classNames('start-img')}/>
+            <div className={classNames('start-project-explain')}>
+                {`프로젝트 설명글`}
+            </div>
         </div>
-        <Button text={'시작 btn'} style={{border: '1px solid #000000', backgroundColor:'white'}} onPress={props.onPress}/>
-    </div>)
+        <Button text={'시작하기'} style={{backgroundColor:'#1339FF', color:'white'}} onPress={props.onPress}/>
+    </>)
 }
 
 export default Start;

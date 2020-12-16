@@ -25,6 +25,7 @@ const App = () => {
     else console.log(`page ${pageIdx} is unknown property`)
     increasePageIdx();
   }
+  const isQuestionPage = pageIdx > 0 && pageIdx < LAST_PAGE_IDX-1
   const increasePageIdx = () => setPageIdx((pageIdx+1) % (LAST_PAGE_IDX+1));
   const mbtiController = type => {
     mbti[type]++;
@@ -62,9 +63,9 @@ const App = () => {
   return (
       windowSize < 769 ? 
       <div className="App">
-        <div className={classNames('contents-wrapper')}>
-          {pageIdx > 0 && pageIdx < LAST_PAGE_IDX-1 && <Title text={`Q${pageIdx}`} style={{margin:'70px 0 35px 0'}}/>}
-          {pageIdx > 0 && pageIdx < LAST_PAGE_IDX-1 && <Question questionIdx={pageIdx-1}/>}
+        <div className={classNames('contents-wrapper')} style={isQuestionPage ? {height: 306} : null}>
+          {isQuestionPage && <Title text={`Q${pageIdx}`} style={{margin:'69px 0 62px 0'}}/>}
+          {isQuestionPage && <Question questionIdx={pageIdx-1}/>}
           {/* {titles.map((text, idx) => <Title text={text} key={idx} style={{margin:'15px 15px'}}/>)} */}
         </div>
         <PageController 

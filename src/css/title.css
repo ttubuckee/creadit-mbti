@@ -7,6 +7,8 @@
 }
 .title-text {
     font-size : 24px;
+    color: #1339FF;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 769px){

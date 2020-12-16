@@ -1,19 +1,20 @@
-@media(max-width:426px){
-    .start-wrapper {
+.start-wrapper {
         
-    }
-    .start-img {
-        width: 222px;
-        height: 222px;
-        margin: 147px 0 37px 0;
-    }
-    .start-project-explain {
-        background-color: #EAEAEA;
-        padding: 27px 0px;
-        font-size: 24px;
-        margin-bottom: 66px;
-    }
-    .start-button {
+}
+.start-img {
+    width: 222px;
+    height: 222px;
+    margin: 147px 0 37px 0;
+}
+.start-project-explain {
+    background-color: #EAEAEA;
+    padding: 27px 0px;
+    font-size: 24px;
+    margin-bottom: 66px;
+}
+.start-button {
 
-    }
+}
+@media screen and (min-width:769px){
+    
 }

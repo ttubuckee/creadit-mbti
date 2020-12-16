@@ -34,8 +34,8 @@ const QuestionBody = (props) => {
                         onPress={props.onPress} 
                         style={{marginTop:15, marginBottom:15,  height:50,}}/>)}
         </div>
-        <span style={{fontSize:"18px",fontWeight:"bold", textAlign:"right", display:"block", marginTop:"56px", marginRight:"10px", alignSelf:'flex-end'}}>{props.pageIdx}/{14}</span>
-        <ProgressBar wrapperStyle={wrapperStyle} progress={props.pageIdx} questions_len={14}/>
+        <span style={{fontSize:"18px",fontWeight:"bold", textAlign:"right", display:"block", marginTop:"56px", marginRight:"10px", alignSelf:'flex-end'}}>{props.pageIdx}/{13}</span>
+        <ProgressBar wrapperStyle={wrapperStyle} progress={props.pageIdx} questions_len={13}/>
     </div>
     )
 }

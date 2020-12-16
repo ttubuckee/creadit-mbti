@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import KakaoShareButton from './KakaoShareButton';
 import '../css/result.css';
 import { getMBTIResult } from '../modules/GeneralFunction';
 
@@ -11,10 +12,9 @@ const Result = (props) => {
             if(mbti_type === type) return result_obj[type]; 
         }
     }
+      
     const my_mbti_obj = getResultObj(result);
-    React.useEffect(() => {
-        //setTest(true);
-    }, [])
+
     console.log(`type : ${props.result}`)
     console.log(`mbti : `, props.mbti)
 
@@ -38,7 +38,17 @@ const Result = (props) => {
                 <span>{my_mbti_obj["worst-combi"]}</span>
             </div>
         </div>
-        <div className={"div-share"}></div>
+        <div className={"div-share"}>
+            <KakaoShareButton/>
+            <div onClick={()=>{
+                const dummy = document.createElement("textarea");
+                document.body.appendChild(dummy);
+                dummy.value = window.location.href;
+                dummy.select();
+                document.execCommand("copy");
+                document.body.removeChild(dummy);
+            }}>링크복사<br/>이미지</div>
+        </div>
         <div className={"div-retry"} onClick={props.onPress}>다시하기</div>
         <img className={"img-banner"}></img>
         <div className={"div-notion-link"}></div>

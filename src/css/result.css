@@ -54,6 +54,8 @@
     margin: 0 auto;
     margin-top: 17px;
     text-align: left;
+    display: flex;
+    flex-direction: row;
 }
 .img-combi {
     width: 100%;

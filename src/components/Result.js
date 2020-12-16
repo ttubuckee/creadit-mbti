@@ -45,10 +45,23 @@ const Result = (props) => {
                 </div>
             </div>
             <hr style={{backgroundColor: "#1339FF",height: 1}}/>
-            <div className={"div-combination-title"}><span style={{fontWeight:"bold"}}>최고조합</span><span>&nbsp;&nbsp;&nbsp;{my_mbti_obj["best-combi"]}</span></div>
+            <div className={"div-combination-title"}>
+                <div style={{marginRight:"2.5%"}}>
+                    <span style={{fontWeight:"bold",whiteSpace:'nowrap',marginRight:"2.5%"}}>최고조합</span>
+                </div>
+                <div>{my_mbti_obj["best-combi"]}</div>
+            </div>
             <img className={"img-combi"} src={'/images/mbti_result/isfj.png'}></img>
+            <div className={"div-combination-title"}>
+                <div style={{marginRight:"2.5%"}}>
+                    <span style={{fontWeight:"bold",whiteSpace:'nowrap'}}>최악조합</span>
+                </div>
+                <div>{my_mbti_obj["worst-combi"]}</div>
+            </div>
+            <img className={"img-combi"} src={'/images/mbti_result/isfj.png'}></img>
+            {/* <img className={"img-combi"} src={'/images/mbti_result/isfj.png'}></img>
             <div className={"div-combination-title"}><span style={{fontWeight:"bold"}}>최악조합</span><span>&nbsp;&nbsp;&nbsp;{my_mbti_obj["worst-combi"]}</span></div>
-            <img className={"img-combi"} src={'/images/mbti_result/isfj.png'}></img>
+            <img className={"img-combi"} src={'/images/mbti_result/isfj.png'}></img> */}
     
             <div className={"div-share"}>
                 <KakaoShareButton/>

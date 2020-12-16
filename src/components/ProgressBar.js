@@ -6,7 +6,7 @@ const ProgressBar = (props) =>{
     const progress_percent = (progress / questions_len) * 100;
 
     const progressbarStyle = {
-        "backgroundColor": "red",
+        "backgroundColor": "#1339FF",
         "width": `${progress_percent}%`,
         "height": "100%",
     }

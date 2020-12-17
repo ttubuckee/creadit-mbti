@@ -29,7 +29,7 @@ const Loading = (props) => {
         <div id={"div-spinner-wrapper"}>
             {loadingIndicator ? <CircularProgress id={"spinner"} size={60} thickness={2.5} style={{color:"#1339FF"}}/> : null}
             <div className={"div-text-wrapper"}><span style={{color:"#1339FF"}}>결과 분석 중</span></div>
-            <ProgressBar className={'progressbar'} wrapperStyle={wrapperStyle} progress={0} questions_len={100}></ProgressBar>
+            <ProgressBar className={'progressbar'} wrapperStyle={wrapperStyle} progress={0} questions_len={100} animation={true}></ProgressBar>
         </div>
     )
 }

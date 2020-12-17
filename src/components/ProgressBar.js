@@ -10,10 +10,13 @@ const ProgressBar = (props) =>{
         "width": `${progress_percent}%`,
         "height": "100%",
     }
+    React.useEffect(()=>{
+        if(animation) document.getElementsByClassName('progress')[0].classList = 'load-start';
+    },[animation])
 
     return(
         <div className={"progressbar-wrapper"} style={props.wrapperStyle}>
-            <div className={"load-start"} style={progressbarStyle}></div>
+            <div className={"progress"} style={progressbarStyle}></div>
         </div>
     );
 }

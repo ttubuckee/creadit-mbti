@@ -16,14 +16,6 @@ const Loading = (props) => {
         if(!loadingIndicator) props.onPress();
     }, [loadingIndicator]);
 
-    const wrapperStyle = {
-        "width": "100%",
-        "height": "8px",
-        "margin": "10px auto",
-        "padding": "0px",
-        "backgroundColor": "#EAEAEA",
-    }
-
     return(
         <div id={"div-spinner-wrapper"}>
             {loadingIndicator ? <CircularProgress id={"spinner"} size={60} thickness={2.5} style={{color:"#1339FF"}}/> : null}

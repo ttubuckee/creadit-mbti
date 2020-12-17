@@ -1,122 +1,86 @@
-@media(max-width:426px) {
-    .div-result-wrapper {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .div-project-title {
-        margin-top: 85px;
-        font-weight: bold;
-    }
-    .div-result-type {
-        margin-top: 14px;
-        font-weight: bold;
-    }
-    .img-result-type {
-        margin-top: 41px;
-        font-weight: bold;
-    }
-    .div-result-des-wrapper {
-        margin-top: 42px;
-    }
-    .p-result-des {
-        
-    }
-    .div-combinations-wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; /* 나중에 수정*/
-    }
-    .div-best-combi-wrapper {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-    }
-    .img-best-combi {
-        margin-top: 19px;
-    }
-    .div-worst-combi-wrapper {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-    }
-    .img-worst-combi {
-        margin-top: 19px;
-    }
-    .div-share {
-        margin-top: 31px;
-    }
-    .div-retry {
-        margin-top: 19px;
-    }
-    .img-banner {
-        margin-top: 34px;
-    }
-    .div-notion-link {
-        margin-top: 29px;
-    }
-    .div-result-wrapper {
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .div-project-title {
-        margin-top: 85px;
-        font-weight: bold;
-    }
-    .div-result-type {
-        margin-top: 14px;
-        font-weight: bold;
-    }
-    .img-result-type {
-        margin-top: 41px;
-        font-weight: bold;
-    }
-    .div-result-des-wrapper {
-        margin-top: 42px;
-    }
-    .p-result-des {
-        
-    }
-    .div-combinations-wrapper {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; /* 나중에 수정*/
-    }
-    .div-best-combi-wrapper {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-    }
-    .img-best-combi {
-        margin-top: 19px;
-    }
-    .div-worst-combi-wrapper {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-    }
-    .img-worst-combi {
-        margin-top: 19px;
-    }
-    .div-share {
-        margin-top: 31px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .div-retry {
-        margin-top: 19px;
-    }
-    .img-banner {
-        margin-top: 34px;
-    }
-    .div-notion-link {
-        margin-top: 29px;
-    }
+.div-result-text-wrapper {
+    width: 90%;
+    margin: 0px auto;
 }
-@media (min-width:769px) { /* desktop css 작성*/
+.img-logo {
+    margin-top: 27px;
+}
+.div-project-title {
+    margin-top: 14px;
+    font-weight: bold;
+}
+.img-result-type {
+    width: 100%;
+    margin-top: 14px;
+    font-weight: bold;
+}
+.div-result-type {
+    margin-top: 11px;
+    font-weight: bold;
+    text-align: left;
+}
+.div-view-count {
+    text-align: left;   
+}
+.div-result-des-wrapper {
+    margin-top: 42px;
+}
+.p-result-des {
+    text-align: left;
+    margin-top: 21px;
+    margin-bottom: 16px;
+    white-space: pre-wrap;
+}
+.div-comment-wrapper {
+    width: 90%;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    text-align: left;
+}
+.div-comment {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+}
+.div-comment img {
+    width: auto;
+    height: 5%;
+}
+.div-comment div {
+    padding-left: 5%;
+    line-height: 1.5;
+}
+.div-combination-title {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 17px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+}
+.img-combi {
+    width: 100%;
+    margin-top: 17px;
+}
+.div-share {
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.share-btn {
+    width: 50px;
+    height: 50px;
+    margin-left: 1%;
+}
+.img-banner {
+    margin-top: 28px;
+    width: 100%;
+    height: auto;
+}
+.div-notion-link {
+    margin-top: 29px;
+}
+@media screen and (min-width:769px){
     
 }

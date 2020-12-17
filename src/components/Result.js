@@ -66,8 +66,11 @@ const Result = (props) => {
             <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['worst-combi-type']}.png`}></img>
             <div className={"div-share"}>
                 <KakaoShareButton/>
-                <a href={"https://twitter.com/intent/tweet?text=hello&url=www.naver.com"}>
-                    트위터
+                <a className={"share-btn"} href={`http://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}>
+                    <img src={"/images/facebook_btn.png"} className={"share-btn"}/>
+                </a>
+                <a className={"share-btn"} href={`http://twitter.com/share?url=${window.location.href}`}>
+                    <img src={"/images/twitter_btn.png"} className={"share-btn"}/>
                 </a>
                 <div onClick={()=>{
                     const dummy = document.createElement("textarea");
@@ -76,15 +79,17 @@ const Result = (props) => {
                     dummy.select();
                     document.execCommand("copy");
                     document.body.removeChild(dummy);
-                }}>링크복사<br/>이미지</div>
+                }} className={"share-btn"}><img src={"/images/copy_btn.png"} className={"share-btn"}/></div>
+                <a href={`/images/mbti_result/${result}.png`} className={"share-btn"} download={"creadit_youtuber_style.png"}>
+                    <img src={"/images/download_btn.png"} className={"share-btn"}/>
+                </a>
             </div>
-            <Button text={'다시하기'} style={{backgroundColor:'#1339FF', color:'white', margin: "0 auto"}} onPress={props.onPress}/>
-            <a href="http://creadit.godomall.com/main/index.php">
+            <Button text={'다시하기'} style={{backgroundColor:'#1339FF', color:'white', margin: "0 auto", marginTop:"66px"}} onPress={props.onPress}/>
+            <a href="http://creadit.godomall.com/">
                 <img className={"img-banner"} src={'/images/small_banner.png'}></img>
             </a>
             <p style={{fontWeight:"bold", textAlign:"left", margin:"0 auto",width:"90%",marginTop:"37px"}}>크리에이터로 성장할 수 있는 곳,<br/>크리에이딧이 궁금하다면?👀</p>
-            <Button text={'📌notion에서 자세히 보기'} style={{backgroundColor:'#010101', color:'white', margin: "0 auto", marginTop:"15px"}} onPress={props.onPress}/>
-            <div className={"div-notion-link"}></div>
+            <Button text={'📌notion에서 자세히 보기'} style={{backgroundColor:'#010101', color:'white', margin: "0 auto", marginTop:"15px", marginBottom:'105px'}} onPress={()=>{window.location.href = "https://www.notion.so/CREADIT-767d799fa8b140c683fb35b62d7e4a7b"}}/>
         </div>
     )
 }

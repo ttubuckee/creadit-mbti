@@ -1,14 +1,28 @@
 import React from 'react';
-import classNames from 'classnames';
+import { CircularProgress, LinearProgress } from '@material-ui/core/';
+import ProgressBar from '../css/loading.css';
+
 const Loading = (props) => {
-    const { text } = props; // props(read-only)
+    const { time } = props; // props(read-only)
+    const [loadingIndicator,setLoadingStatus] = React.useState(true);
+
     React.useEffect(()=>{
-        //setTest(true);
-    }, [])
+        const spinner_h = document.getElementById("spinner").style.height.split('px')[0];
+        document.getElementById("div-spinner-wrapper").style.marginTop = `${window.innerHeight/2 - spinner_h}px`;
+        setTimeout(()=>setLoadingStatus(false),+time);
+    }, []);
+
+    React.useEffect(()=>{
+        if(!loadingIndicator) props.onPress();
+    }, [loadingIndicator]);
+
     return(
-    <div className={classNames('button-wrapper')} onClick={props.onPress} style={props.style}>
-        <div>{text}</div>
-    </div>)
+        <div id={"div-spinner-wrapper"}>
+            {loadingIndicator ? <CircularProgress id={"spinner"} size={60} thickness={2.5} style={{color:"#1339FF"}}/> : null}
+            <div className={"div-text-wrapper"}><span style={{color:"#1339FF"}}>결과 분석 중</span></div>
+            {/* {loadingIndicator ? <LinearProgress style={{color:"#1339FF"}} className={"linear-progress"}/> : null} */}
+        </div>
+    )
 }
 
 export default Loading;

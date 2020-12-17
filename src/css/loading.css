@@ -1,0 +1,17 @@
+#div-spinner-wrapper {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+}
+.div-text-wrapper {
+    margin-top: 45px;
+    color: "#1339FF";
+}
+.div-text-wrapper span{
+    color: "#1339FF";
+    font-weight: bold;
+    font-size: 24px;
+}
+.linear-progress {
+    margin-top: 21px;
+}

@@ -7,6 +7,7 @@ import axios from 'axios';
 import classNames from 'classnames';
 import PageController from './components/PageController';
 import Start from './components/Start';
+import AppContext from './contexts/AppContext';
 const LAST_PAGE_IDX = 15;
 const App = () => {
   const [windowSize, setWindowSize] = React.useState(window.innerWidth); /* screen width를 state에 할당 */
@@ -65,25 +66,29 @@ const App = () => {
       document.body.removeChild(script)
     }
   },[])
-  
+  const appContext = React.useMemo(()=> ({
+    screenWidth: windowSize
+  }), [windowSize])
   return (
-      windowSize < 769 ? 
-      <div className="App">
-        <div className={classNames('contents-wrapper')} style={isQuestionPage ? {height: 306} : null}>
-          {isQuestionPage && <Title text={`Q${pageIdx}`} style={{margin:'69px 0 62px 0'}}/>}
-          {isQuestionPage && <Question questionIdx={pageIdx-1}/>}
-          {/* {titles.map((text, idx) => <Title text={text} key={idx} style={{margin:'15px 15px'}}/>)} */}
-        </div>
-        <PageController 
-          pageIdx={pageIdx} 
-          className={classNames('page-controller-wrapper')} 
-          onPress={onPressPageController}
-          result={pageIdx === LAST_PAGE_IDX && getMbtiType()}
-          mbti={mbti}/>
-      </div> : 
-      <div className={classNames('not-ready-screen')}>
-        {/* <div>화면이 준비중입니다.</div> */}
-      </div>
+      <AppContext.Provider value={appContext}>
+        {windowSize < 769 ? 
+        <div className="App">
+          <div className={classNames('contents-wrapper')} style={isQuestionPage ? {height: 306} : null}>
+            {isQuestionPage && <Title text={`Q${pageIdx}`} style={{margin:'69px 0 62px 0'}}/>}
+            {isQuestionPage && <Question questionIdx={pageIdx-1}/>}
+            {/* {titles.map((text, idx) => <Title text={text} key={idx} style={{margin:'15px 15px'}}/>)} */}
+          </div>
+          <PageController 
+            pageIdx={pageIdx} 
+            className={classNames('page-controller-wrapper')} 
+            onPress={onPressPageController}
+            result={pageIdx === LAST_PAGE_IDX && getMbtiType()}
+            mbti={mbti}/>
+        </div> : 
+        <div className={classNames('not-ready-screen')}>
+          {/* <div>화면이 준비중입니다.</div> */}
+        </div>}
+      </AppContext.Provider>
   );
 }
 

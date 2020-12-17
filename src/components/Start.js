@@ -10,7 +10,7 @@ const Start = (props) => {
     return(
     <>
         <div className={classNames('start-wrapper')} style={props.style}>
-            <img src={'../start-logo.png'} className={classNames('start-img')}/>
+            <img src={'../start-logo2.png'} className={classNames('start-img')}/>
             <div className={classNames('start-project-explain')}>
                 {`너튜브를 시작한다면..`}<br/>{`어떤 너튜버를 할까?`}
             </div>

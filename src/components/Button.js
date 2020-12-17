@@ -8,11 +8,9 @@ const Button = (props) => {
         //setTest(true);
     }, [])
     return(
-    <div className={classNames('button-wrapper', props.className)} onClick={() => props.onPress(type)} 
-            style={props.style} 
-            onMouseEnter={props.onMouseEnter !== undefined ? ()=>props.onMouseEnter() : null} 
-            onMouseOut={props.onMouseOut !== undefined ?()=>props.onMouseOut() : null}>
-        <div className={classNames('button-text')} style={props.textStyle}>{text}</div>
+    <div className={classNames('button-wrapper', props.className)} style={props.style}>
+        <div className={classNames('button-text')} style={props.textStyle} onClick={() => props.onPress(type)}
+            onMouseEnter={props.onMouseEnter !== undefined ? ()=>props.onMouseEnter() : null} onMouseOut={props.onMouseOut !== undefined ?()=>props.onMouseOut() : null}>{text}</div>
     </div>)
 }
 

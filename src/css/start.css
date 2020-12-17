@@ -2,15 +2,15 @@
         
 }
 .start-img {
+    height: 120px;
     width: 222px;
-    height: 222px;
     margin: 147px 0 37px 0;
 }
 .start-project-explain {
-    background-color: #EAEAEA;
     padding: 27px 0px;
-    font-size: 24px;
+    font-size: 18px;
     margin-bottom: 66px;
+    font-weight: bold;
 }
 .start-button {
 

@@ -161,7 +161,8 @@ export const getMBTIResult = () => {
     return result_data;
 }
 
-export const getStartImageSource = () => 'https://post-phinf.pstatic.net/MjAxODA4MDlfMjk2/MDAxNTMzNzkyMjAzMzA2.eN6ftc0F8v7_-RafQW35jposp2qa1JBnaW-QScAu3GIg.JQDWvH38-z54nTEWjL2krDWtHq3giqo4stIz5Pw-V3cg.PNG/1.png?type=w1200'
+export const startImgSrc = '../../public/start-logo.png'
+export const getStartImgSrc = () => '../../public/start-logo.png'
 export const getData = () => // 통신 예시 
     axios.get('https://3.34.213.122/')
       .then(res => console.log(res)) // success

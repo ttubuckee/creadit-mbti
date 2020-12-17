@@ -8,13 +8,12 @@ import QuestionBody from './QuestionBody';
 import { getMBTIQuestions, getStartImageSource } from '../modules/GeneralFunction';
 
 const PageController = (props) => {
-    const startImgSrc = getStartImageSource();
     React.useEffect(()=>{
         //setTest(true);
     }, [])
     const questions = getMBTIQuestions();
     switch(props.pageIdx){
-        case 0: return <Start imgSrc={startImgSrc} onPress={props.onPress}/>/* start 화면 */
+        case 0: return <Start onPress={props.onPress}/>/* start 화면 */
         default: 
             return <QuestionBody questions={questions[props.pageIdx-1]} style={{marginTop:'107px', width:'88%'}} onPress={props.onPress} pageIdx={props.pageIdx} lastPageIdx={props.lastPageIdx}/>/* 1~13번 질문 */
         case 14: return <Loading onPress={props.onPress} text={'버튼'}/> /* 로딩 화면 */

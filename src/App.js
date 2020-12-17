@@ -9,8 +9,14 @@ import PageController from './components/PageController';
 import Start from './components/Start';
 const LAST_PAGE_IDX = 15;
 const App = () => {
-  window.addEventListener("resize", ()=>setWindowSize(window.innerWidth)) /* screen width 변경 observer */
   const [windowSize, setWindowSize] = React.useState(window.innerWidth); /* screen width를 state에 할당 */
+  React.useEffect(()=>{
+    // const script = document.createElement("script");
+    // document.head.appendChild(script);
+    window.onload = () => {
+      window.addEventListener("resize", ()=>setWindowSize(window.innerWidth)) /* screen width 변경 observer */
+    };       
+  }, [])
   const [mbti, setMBTI] = React.useState({
     'E' : 0, 'I' : 0,
     'N' : 0, 'S' : 0,

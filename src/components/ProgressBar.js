@@ -1,5 +1,5 @@
 import React, { Component, createRef } from 'react';
-import classNames from 'classnames';
+import '../css/progressbar.css';
 
 const ProgressBar = (props) =>{
     const { progress, questions_len, wrapperStyle, animation} = props;
@@ -11,12 +11,17 @@ const ProgressBar = (props) =>{
         "height": "100%",
     }
     React.useEffect(()=>{
-        if(animation) document.getElementsByClassName('progress')[0].classList = 'load-start';
+        if(animation) {
+            // document.getElementsByClassName('progress')[0].classList = 'load-start';
+            console.log('p2: ',document.getElementsByClassName('load-start')[0]);
+            console.log('p2: ',document.getElementsByClassName('progress')[0]);
+            console.log('추가됨',animation);
+        }
     },[animation])
 
     return(
         <div className={"progressbar-wrapper"} style={props.wrapperStyle}>
-            <div className={"progress"} style={progressbarStyle}></div>
+            <div className={animation ? "load-start" : "progress"} style={progressbarStyle}></div>
         </div>
     );
 }

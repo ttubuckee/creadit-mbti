@@ -2,7 +2,7 @@ import React, { Component, createRef } from 'react';
 import classNames from 'classnames';
 
 const ProgressBar = (props) =>{
-    const { progress, questions_len, wrapperStyle } = props;
+    const { progress, questions_len, wrapperStyle, animation} = props;
     const progress_percent = (progress / questions_len) * 100;
 
     const progressbarStyle = {
@@ -13,7 +13,7 @@ const ProgressBar = (props) =>{
 
     return(
         <div className={"progressbar-wrapper"} style={props.wrapperStyle}>
-            <div className={"progressbar"} style={progressbarStyle}></div>
+            <div className={"load-start"} style={progressbarStyle}></div>
         </div>
     );
 }

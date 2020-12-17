@@ -13,6 +13,11 @@ const Result = (props) => {
             if(mbti_type === type) return result_obj[type]; 
         }
     }
+    const parseNewLine = (data)=>{
+        return data.split('\n').map( line => {
+            return (<span>{line}<br/></span>);
+        })
+    }
     const my_mbti_obj = getResultObj(result);
 
     React.useEffect(()=>{
@@ -27,7 +32,7 @@ const Result = (props) => {
         <div>
             <img className={"img-logo"} src={'/images/creadit.png'} alt={"creadit-logo"}></img>
             <div className={"div-project-title"}><span>나의 부캐찾기 프로젝트</span></div>
-            <img className={"img-result-type"} src={'/images/mbti_result/isfj.png'}></img>
+            <img className={"img-result-type"} src={`/images/mbti_result/${result}.png`}></img>
 
             <div className={"div-result-text-wrapper"}>
                 <div className={"div-result-type"}>{my_mbti_obj.type_des}</div>
@@ -51,18 +56,14 @@ const Result = (props) => {
                 </div>
                 <div>{my_mbti_obj["best-combi"]}</div>
             </div>
-            <img className={"img-combi"} src={'/images/mbti_result/isfj.png'}></img>
+            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['best-combi-type']}.png`}></img>
             <div className={"div-combination-title"}>
                 <div style={{marginRight:"2.5%"}}>
                     <span style={{fontWeight:"bold",whiteSpace:'nowrap'}}>최악조합</span>
                 </div>
                 <div>{my_mbti_obj["worst-combi"]}</div>
             </div>
-            <img className={"img-combi"} src={'/images/mbti_result/isfj.png'}></img>
-            {/* <img className={"img-combi"} src={'/images/mbti_result/isfj.png'}></img>
-            <div className={"div-combination-title"}><span style={{fontWeight:"bold"}}>최악조합</span><span>&nbsp;&nbsp;&nbsp;{my_mbti_obj["worst-combi"]}</span></div>
-            <img className={"img-combi"} src={'/images/mbti_result/isfj.png'}></img> */}
-    
+            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['worst-combi-type']}.png`}></img>
             <div className={"div-share"}>
                 <KakaoShareButton/>
                 <a href={"https://twitter.com/intent/tweet?text=hello&url=www.naver.com"}>

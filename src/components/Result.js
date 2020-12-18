@@ -7,7 +7,7 @@ import { getMBTIResult } from '../modules/GeneralFunction';
 
 const Result = (props) => {
     const { text , result } = props; // props(read-only)
-    console.log(result, result.toLowerCase());
+    console.log(result, result);
     const result_obj = getMBTIResult();
     const getResultObj = (mbti_type) => { // 최종타입정보 객체 반환
         for(let type in result_obj){
@@ -30,7 +30,7 @@ const Result = (props) => {
         <div>
             <img className={"img-logo"} src={'/images/creadit.png'} alt={"creadit-logo"}></img>
             <div className={"div-project-title"}><span>나의 부캐찾기 프로젝트</span></div>
-            <img className={"img-result-type"} src={`/images/mbti_result/${result.toLowerCase()}.png`}></img>
+            <img className={"img-result-type"} src={`/images/mbti_result/${result}.png`}></img>
 
             <div className={"div-result-text-wrapper"}>
                 <div className={"div-result-type"}>{my_mbti_obj.type_des}</div>
@@ -78,7 +78,7 @@ const Result = (props) => {
                     document.execCommand("copy");
                     document.body.removeChild(dummy);
                 }} className={"share-btn"}><img src={"/images/copy_btn.png"} className={"share-btn"}/></div>
-                <a href={`/images/mbti_result/${result.toLowerCase()}.png`} className={"share-btn"} download={"creadit_youtuber_style.png"}>
+                <a href={`/images/mbti_result/${result}.png`} className={"share-btn"} download={"creadit_youtuber_style.png"}>
                     <img src={"/images/download_btn.png"} className={"share-btn"}/>
                 </a>
             </div>

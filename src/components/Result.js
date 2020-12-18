@@ -7,7 +7,6 @@ import { getMBTIResult } from '../modules/GeneralFunction';
 
 const Result = (props) => {
     const { text , result } = props; // props(read-only)
-    console.log(result, result);
     const result_obj = getMBTIResult();
     const getResultObj = (mbti_type) => { // 최종타입정보 객체 반환
         for(let type in result_obj){
@@ -30,7 +29,7 @@ const Result = (props) => {
         <div>
             <img className={"img-logo"} src={'/images/creadit.png'} alt={"creadit-logo"}></img>
             <div className={"div-project-title"}><span>나의 부캐찾기 프로젝트</span></div>
-            <img className={"img-result-type"} src={`/images/mbti_result/${result}.png`}></img>
+            <img className={"img-result-type"} src={`/images/mbti_result/${result.toLowerCase()}.png`}></img>
 
             <div className={"div-result-text-wrapper"}>
                 <div className={"div-result-type"}>{my_mbti_obj.type_des}</div>
@@ -54,14 +53,14 @@ const Result = (props) => {
                 </div>
                 <div>{my_mbti_obj["best-combi"]}</div>
             </div>
-            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['best-combi-type']}.png`}></img>
+            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['best-combi-type'].toLowerCase()}.png`}></img>
             <div className={"div-combination-title"}>
                 <div style={{marginRight:"2.5%"}}>
                     <span style={{fontWeight:"bold",whiteSpace:'nowrap'}}>최악조합</span>
                 </div>
                 <div>{my_mbti_obj["worst-combi"]}</div>
             </div>
-            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['worst-combi-type']}.png`}></img>
+            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['worst-combi-type'].toLowerCase()}.png`}></img>
             <div className={"div-share"}>
                 <KakaoShareButton/>
                 <a className={"share-btn"} href={`http://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}>

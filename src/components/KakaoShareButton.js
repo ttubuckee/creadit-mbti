@@ -21,7 +21,7 @@ const KakaoShareButton = (props) => {
         content: {
           title: '나의 유튜브 부캐 찾기',
           description: '내가 만약 유튜버라면?!',
-          imageUrl: 'imgUrl',
+          imageUrl: imgUrl,
           link: {
             mobileWebUrl: window.location.href,
             webUrl: window.location.href,

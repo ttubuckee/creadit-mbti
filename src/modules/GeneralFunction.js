@@ -92,7 +92,7 @@ export const getMBTIResult = () => {
             "best-comment":"00님 일상 썰 풀어주세요!",
             "best-combi-type":"ISTJ",
             "worst-combi-type":"INTJ",
-            "img-url":"https://i.esdrop.com/d/fMhd23Er9u.png"
+            "img-url":"https://i.esdrop.com/d/EHr5WJ4wSM.png"
         },
         "ESFJ":{
             "type_des":"내돈내산, 현실적 리뷰 너튜버",
@@ -102,7 +102,7 @@ export const getMBTIResult = () => {
             "best-comment":"공짜로 보기 죄송해서 데이터 키고 봤습니다.",
             "best-combi-type":"ISTP",
             "worst-combi-type":"INTP",
-            "img-url":"https://i.esdrop.com/d/d9Ev1A6Tve.png"
+            "img-url":"https://i.esdrop.com/d/ySORjQ1YZw.png"
         },
         "ESTP":{
             "type_des":"여러분 여기 찐입니다, 맛집 발굴형 너튜버",
@@ -156,7 +156,7 @@ export const getMBTIResult = () => {
         },
         "INTJ":{
             "type_des":"그저 GOD, 유니버스 창시형 너튜버",
-            "desc":"자신만의 유니버스를 설계하며 세계관 펼치기에 진심인 완벽 주의형 너튜버 기질이 보입니다.\n\n얼굴을 공개하지 않고 시청자들의 궁금증을 자아내는 내적관종형 너튜버를 한다면\n\n당신의 매력에 스며든 구독자층이 점차 쌓여 본인이 유행의 중심이 될지도 모르겠네요.",
+            "desc":"자신만의 유니버스를 설계하며 세계관 펼치기에 진심인 완벽 주의형 너튜버 기질이 보입니다.\n\n얼굴을 공개하지 않고 시청자들의 궁금증을 자아내는 내적관종형 너튜버를 한다면\n당신의 매력에 스며든 구독자층이 점차 쌓여 본인이 유행의 중심이 될지도 모르겠네요.",
             "best-combi":"탑 아이돌 급, 소통형 스트리머",
             "worst-combi":"아니 오늘 내가, 노가리 스트리머",
             "best-comment":"치밀함에 소름 돋는다..\n\n이정도면 인류도 이분이 만든거 아니냐",
@@ -172,11 +172,11 @@ export const getMBTIResult = () => {
             "best-comment":"저 외국인들은 모르겠지..\n\n이 영상이 이렇게 웃기다는걸...\n\n지옥의 금손",
             "best-combi-type":"ESTJ",
             "worst-combi-type":"ENTP",
-            "img-url":"https://i.esdrop.com/d/2lLHqgKFb1.png"
+            "img-url":"https://i.esdrop.com/d/B0ElXEX2RI.png"
         },
         "ISFJ":{
             "type_des":"목소리 맛집, 힐링형 ASMR",
-            "desc":"차분하며 친근한 목소리로 사람들에게 마음의 안정을 주는 당신은 힐링 형 ASMR의 기질이 보입니다.\n\n공감 능력이 뛰어나며 남들의 이야기를 잘 들어주기도 하는 당신의 유튜브 댓글은\n\n\"오늘 회사에서 힘들었는데 이 영상으로 하루 마무리합니다.\" ,\"OO님 덕분에 치유 받고 갑니다\"로 도배되는 힐링 명소네요.",
+            "desc":"차분하며 친근한 목소리로 사람들에게 마음의 안정을 주는 당신은 힐링 형 ASMR의 기질이 보입니다.\n\n공감 능력이 뛰어나며 남들의 이야기를 잘 들어주기도 하는 당신의 유튜브 댓글은\n\"오늘 회사에서 힘들었는데 이 영상으로 하루 마무리합니다.\" ,\n\"OO님 덕분에 치유 받고 갑니다\"로 도배되는 힐링 명소네요.",
             "best-combi":"여러분 여기 찐입니다, 맛집 발굴형 너튜버",
             "worst-combi":"탑 아이돌 급, 소통형 스트리머",
             "best-comment":"잘자요.. 드르륵 탁....잘자요.. 드르륵 탁....잘자요.. 드르륵 탁....잘자요.. 드르륵 탁....",

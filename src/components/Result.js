@@ -7,6 +7,7 @@ import { getMBTIResult } from '../modules/GeneralFunction';
 
 const Result = (props) => {
     const { text , result } = props; // props(read-only)
+    console.log(result, result.toLowerCase());
     const result_obj = getMBTIResult();
     const getResultObj = (mbti_type) => { // 최종타입정보 객체 반환
         for(let type in result_obj){

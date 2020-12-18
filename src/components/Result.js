@@ -7,6 +7,7 @@ import { getMBTIResult } from '../modules/GeneralFunction';
 
 const Result = (props) => {
     const { text , result } = props; // props(read-only)
+    console.log(result,result.toLowerCase());
     const result_obj = getMBTIResult();
     const getResultObj = (mbti_type) => { // 최종타입정보 객체 반환
         for(let type in result_obj){
@@ -53,14 +54,14 @@ const Result = (props) => {
                 </div>
                 <div>{my_mbti_obj["best-combi"]}</div>
             </div>
-            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['best-combi-type'].toLowerCase()}.png`}></img>
+            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['best-combi-type']}.png`}></img>
             <div className={"div-combination-title"}>
                 <div style={{marginRight:"2.5%"}}>
                     <span style={{fontWeight:"bold",whiteSpace:'nowrap'}}>최악조합</span>
                 </div>
                 <div>{my_mbti_obj["worst-combi"]}</div>
             </div>
-            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['worst-combi-type'].toLowerCase()}.png`}></img>
+            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['worst-combi-type']}.png`}></img>
             <div className={"div-share"}>
                 <KakaoShareButton/>
                 <a className={"share-btn"} href={`http://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}>
@@ -77,7 +78,7 @@ const Result = (props) => {
                     document.execCommand("copy");
                     document.body.removeChild(dummy);
                 }} className={"share-btn"}><img src={"/images/copy_btn.png"} className={"share-btn"}/></div>
-                <a href={`/images/mbti_result/${result}.png`} className={"share-btn"} download={"creadit_youtuber_style.png"}>
+                <a href={`/images/mbti_result/${result.toLowerCase()}.png`} className={"share-btn"} download={"creadit_youtuber_style.png"}>
                     <img src={"/images/download_btn.png"} className={"share-btn"}/>
                 </a>
             </div>

@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
-const KakaoShareButton = () => {
+const KakaoShareButton = (props) => {
+  const { imgUrl } = props;
   useEffect(() => {
     createKakaoButton()
   }, [])
@@ -18,9 +19,9 @@ const KakaoShareButton = () => {
         container: '#kakao-link-btn',
         objectType: 'feed',
         content: {
-          title: '크리에이딧',
+          title: '나의 유튜브 부캐 찾기',
           description: '내가 만약 유튜버라면?!',
-          imageUrl: 'https://p.kakaocdn.net/th/talkp/wlDcAmvvzq/Gt8sSy2eWH1llONgHRrdtK/iy7x4f_640x640_s.jpg',
+          imageUrl: 'imgUrl',
           link: {
             mobileWebUrl: window.location.href,
             webUrl: window.location.href,

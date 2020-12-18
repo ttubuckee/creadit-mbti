@@ -28,14 +28,7 @@ const KakaoShareButton = () => {
         },
         buttons: [
           {
-            title: '웹으로 보기',
-            link: {
-              mobileWebUrl: window.location.href,
-              webUrl: window.location.href,
-            },
-          },
-          {
-            title: '앱으로 보기',
+            title: '검사하러 가기',
             link: {
               mobileWebUrl: window.location.href,
               webUrl: window.location.href,

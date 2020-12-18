@@ -92,7 +92,7 @@ export const getMBTIResult = () => {
             "best-comment":"00님 일상 썰 풀어주세요!",
             "best-combi-type":"ISTJ",
             "worst-combi-type":"INTJ",
-            "img-url":"https://i.esdrop.com/d/EHr5WJ4wSM.png"
+            "img-url":"https://i.esdrop.com/d/fMhd23Er9u.png"
         },
         "ESFJ":{
             "type_des":"내돈내산, 현실적 리뷰 너튜버",
@@ -102,7 +102,7 @@ export const getMBTIResult = () => {
             "best-comment":"공짜로 보기 죄송해서 데이터 키고 봤습니다.",
             "best-combi-type":"ISTP",
             "worst-combi-type":"INTP",
-            "img-url":"https://i.esdrop.com/d/ySORjQ1YZw.png"
+            "img-url":"https://i.esdrop.com/d/d9Ev1A6Tve.png"
         },
         "ESTP":{
             "type_des":"여러분 여기 찐입니다, 맛집 발굴형 너튜버",
@@ -172,7 +172,7 @@ export const getMBTIResult = () => {
             "best-comment":"저 외국인들은 모르겠지..\n\n이 영상이 이렇게 웃기다는걸...\n\n지옥의 금손",
             "best-combi-type":"ESTJ",
             "worst-combi-type":"ENTP",
-            "img-url":"https://i.esdrop.com/d/B0ElXEX2RI.png"
+            "img-url":"https://i.esdrop.com/d/2lLHqgKFb1.png"
         },
         "ISFJ":{
             "type_des":"목소리 맛집, 힐링형 ASMR",

@@ -77,9 +77,9 @@ const Result = (props) => {
                     document.execCommand("copy");
                     document.body.removeChild(dummy);
                 }} className={"share-btn"}><img src={"/images/copy_btn.png"} className={"share-btn"}/></div>
-                <a href={`/images/mbti_result/${result}.png`} className={"share-btn"} download={"creadit_youtuber_style.png"}>
+                {/* <a href={`/images/mbti_result/${result}.png`} className={"share-btn"} download={"creadit_youtuber_style.png"}>
                     <img src={"/images/download_btn.png"} className={"share-btn"}/>
-                </a>
+                </a> */}
             </div>
             <Button text={'다시하기'} style={{backgroundColor:'#1339FF', color:'white', margin: "0 auto", marginTop:"66px"}} onPress={props.onPress}/>
             <a href="http://creadit.godomall.com/">

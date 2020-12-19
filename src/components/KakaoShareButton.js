@@ -19,8 +19,6 @@ const KakaoShareButton = (props) => {
         container: '#kakao-link-btn',
         objectType: 'feed',
         content: {
-          image_width: '800px',
-          image_height: '400px',
           title: '나의 유튜브 부캐 찾기',
           description: '내가 만약 유튜버라면?!',
           imageUrl: imgUrl,

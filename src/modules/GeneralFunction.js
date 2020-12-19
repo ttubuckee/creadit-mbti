@@ -133,7 +133,7 @@ export const getMBTIResult = () => {
             "best-comment":"가서 돈쭐내주자. 이런 맛집은 돈으로 혼내줘야지 ㅋㅋ",
             "best-combi-type":"ISFJ",
             "worst-combi-type":"INFP",
-            "img-url":"https://i.esdrop.com/d/EHr5WJ4wSM.png"
+            "img-url":"https://i.esdrop.com/d/tPYByZpQ2n.png"
         },
         "ESTJ":{
             "type_des":"신입받아라, 경력직 신입 너튜버",

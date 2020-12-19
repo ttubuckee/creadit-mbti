@@ -4,8 +4,9 @@
 }
 
 .question-text {
-    font-size: 18px;
+    font-size: 16.8px;
     font-weight: bold;
+    line-height: 35px;
 }
 
 .question-body-wrapper {

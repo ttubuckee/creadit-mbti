@@ -33,7 +33,7 @@ const Result = (props) => {
 
             <div className={"div-result-text-wrapper"}>
                 <div className={"div-result-type"}>{my_mbti_obj.type_des}</div>
-                <div className={"div-view-count"}><span style={{color:"#7A7A7A"}}>{Math.floor(Math.random()*20)+50}만 회</span></div>
+                <div className={"div-view-count"}><span style={{color:"#7A7A7A"}}>조회수 {Math.floor(Math.random()*20)+50}만회</span></div>
                 <div className={"div-result-des-wrapper"}>
                     <p className={"p-result-des"}>{my_mbti_obj.desc}</p>
                 </div>

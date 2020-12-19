@@ -26,7 +26,7 @@ const QuestionBody = (props) => {
     }
     return(
     <div className={classNames("bottom-wrapper")} style={bottom_wrapper_style}>
-        <div className={classNames('question-body-wrapper')} onClick={props.onPress} style={props.pageIdx > 0 && props.pageIdx <= LAST_PAGE_IDX-2 ? {height: 291.4} : {}}>
+        <div className={classNames('question-body-wrapper')} style={props.pageIdx > 0 && props.pageIdx <= LAST_PAGE_IDX-2 ? {height: 291.4} : {}}>
             {questions.map((question, idx) => 
                 <Button
                     className={idx === hoveredIdx && classNames(buttonClass)}

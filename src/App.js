@@ -27,7 +27,7 @@ const App = () => {
   const getBiggerType = (type1, type2) => mbti[type1] > mbti[type2] ? type1 : type2; /* 더 많이 선택된 type을 return */
   const getMbtiType = () => `${getBiggerType('E', 'I')}${getBiggerType('N', 'S')}${getBiggerType('T', 'F')}${getBiggerType('P', 'J')}` /* mbti data를 확인하여 mbti 유형을 완성시켜줌 */
   const [pageIdx, setPageIdx] = React.useState(0); /* page의 인덱스. button click시마다 1씩 증가함 */
-  const onPressPageController = type => {
+  const buttonHandler = type => {
     if(mbti.hasOwnProperty(type)) mbtiController(type)
     else console.log(`page ${pageIdx} is unknown property`)
     increasePageIdx();
@@ -81,7 +81,7 @@ const App = () => {
           <PageController 
             pageIdx={pageIdx} 
             className={classNames('page-controller-wrapper')} 
-            onPress={onPressPageController}
+            onPress={buttonHandler}
             result={pageIdx === LAST_PAGE_IDX && getMbtiType()}
             mbti={mbti}/>
         </div> : 

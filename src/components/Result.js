@@ -62,7 +62,7 @@ const Result = (props) => {
             </div>
             <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['worst-combi-type'].toLowerCase()}.png`}></img>
             <div className={"div-share"}>
-                <KakaoShareButton imgUrl={my_mbti_obj['img-url']}/>
+                <KakaoShareButton imgUrl={my_mbti_obj['img-url']} type={my_mbti_obj.type_des}/>
                 <a className={"share-btn"} href={`http://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}>
                     <img src={"/images/facebook_btn.png"} className={"share-btn"}/>
                 </a>

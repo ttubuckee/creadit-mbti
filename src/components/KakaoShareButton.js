@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 const KakaoShareButton = (props) => {
-  const { imgUrl } = props;
+  const { imgUrl, type } = props;
   useEffect(() => {
     createKakaoButton()
   }, [])
@@ -20,7 +20,7 @@ const KakaoShareButton = (props) => {
         objectType: 'feed',
         content: {
           title: '나의 유튜브 부캐 찾기',
-          description: '내가 만약 유튜버라면?!',
+          description: `당신은 ${type} 타입 입니다.`,
           imageUrl: imgUrl,
           link: {
             mobileWebUrl: window.location.href,

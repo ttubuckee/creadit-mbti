@@ -228,7 +228,14 @@ export const getMBTIResult = () => {
     };
     return result_data;
 }
+export const setMetaTags = (title="기본 타이틀", description="기본 설명", imageUrl="")=>{
+    const setMetaTag = (selector,content)=>document.querySelector(`meta[property="og:${selector}"`).setAttribute("content",content);;
 
+    setMetaTag('title',title);
+    setMetaTag('description',description);
+    setMetaTag('image',imageUrl);
+    setMetaTag('url',window.location.href);
+}
 export const startImgSrc = '../../public/start-logo.png'
 export const getStartImgSrc = () => '../../public/start-logo.png'
 export const getData = () => // 통신 예시 

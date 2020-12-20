@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import KakaoShareButton from './KakaoShareButton';
 import Button from './Button';
 import '../css/result.css';
-import { getMBTIResult } from '../modules/GeneralFunction';
+import { getMBTIResult, setMetaTags } from '../modules/GeneralFunction';
 
 const Result = (props) => {
     const { text , result } = props; // props(read-only)
@@ -21,6 +21,7 @@ const Result = (props) => {
     const my_mbti_obj = getResultObj(result);
 
     React.useEffect(()=>{
+        setMetaTags(my_mbti_obj.type_des,`당신은 \"${my_mbti_obj.type_des}\" 타입 입니다.`,my_mbti_obj["img-url"]);
         const app = document.getElementsByClassName('App')[0];
         app.style.padding = '0px';
     },[]);

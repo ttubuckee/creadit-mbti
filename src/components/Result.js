@@ -7,18 +7,7 @@ import { getMBTIResult } from '../modules/GeneralFunction';
 
 const Result = (props) => {
     const { text , result } = props; // props(read-only)
-    const result_obj = getMBTIResult();
-    const getResultObj = (mbti_type) => { // 최종타입정보 객체 반환
-        for(let type in result_obj){
-            if(mbti_type === type) return result_obj[type]; 
-        }
-    }
-    const parseNewLine = (data)=>{
-        return data.split('\n').map( line => {
-            return (<span>{line}<br/></span>);
-        })
-    }
-    const my_mbti_obj = getResultObj(result);
+    const my_mbti_obj = getMBTIResult(result); // 최종타입정보 객체 반환
 
     React.useEffect(()=>{
         const app = document.getElementsByClassName('App')[0];

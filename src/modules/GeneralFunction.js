@@ -63,7 +63,7 @@ export const getMBTIOptions = () => {
     ];
     return questions;
 }
-export const getMBTIResult = () => {
+export const getMBTIResult = (type) => {
     const result_data = {
         "ENFP":{
             "type_des":"띵겜부터 똥겜까지, 종합 게임 스트리머",
@@ -226,7 +226,7 @@ export const getMBTIResult = () => {
             "img-url":"https://i.esdrop.com/d/SihUPySA0d.png"
         }
     };
-    return result_data;
+    return result_data[type];
 }
 
 export const startImgSrc = '../../public/start-logo.png'

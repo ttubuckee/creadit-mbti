@@ -55,7 +55,7 @@ const Result = (props) => {
                 <a className={"share-btn"} href={`http://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}>
                     <img src={"/images/facebook_btn.png"} className={"share-btn"}/>
                 </a>
-                <a className={"share-btn"} href={`http://twitter.com/share?url=${window.location.href}&hashtags=${"나의 부캐 찾기 프로젝트"}`}>
+                <a className={"share-btn"} href={`http://twitter.com/share?url=${window.location.href}&hashtags=${"나의부캐찾기프로젝트"}`}>
                     <img src={"/images/twitter_btn.png"} className={"share-btn"}/>
                 </a>
                 <div onClick={()=>{

@@ -76,7 +76,7 @@ const Result = (props) => {
                 <img className={"img-banner"} src={'/images/small_banner.png'}></img>
             </a>
             <p style={{fontWeight:"bold", textAlign:"left", margin:"0 auto",width:"90%",marginTop:"37px"}}>크리에이터로 성장할 수 있는 곳,<br/>크리에이딧이 궁금하다면?👀</p>
-            <Button text={'📌notion에서 자세히 보기'} style={{backgroundColor:'#010101', color:'white', margin: "0 auto", marginTop:"15px", marginBottom:'105px'}} onPress={()=>{window.location.href = "https://www.notion.so/CREADIT-767d799fa8b140c683fb35b62d7e4a7b"}}/>
+            <Button text={'📌notion에서 자세히 보기'} style={{backgroundColor:'#010101', color:'white', margin: "0 auto", marginTop:"15px", marginBottom:'105px', border: "1px solid #000000"}} onPress={()=>{window.location.href = "https://www.notion.so/CREADIT-767d799fa8b140c683fb35b62d7e4a7b"}}/>
         </div>
     )
 }

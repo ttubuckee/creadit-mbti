@@ -93,7 +93,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"아니 이 사람 왜 이렇게 웃겨요?",
             "best-combi-type":"INTJ",
             "worst-combi-type":"ISFJ",
-            "img-url":"https://i.esdrop.com/d/wCIPxUHP2z.png"
+            "img-url":"https://i.esdrop.com/d/186R72Ahwr.png"
         },
         "ENTJ":{
             "type_des":"걸어다니는 대기업, 천상계 너튜버",
@@ -113,7 +113,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"00님 일상 썰 풀어주세요!",
             "best-combi-type":"ISTJ",
             "worst-combi-type":"INTJ",
-            "img-url":"https://i.esdrop.com/d/fMhd23Er9u.png"
+            "img-url":"https://i.esdrop.com/d/nmxitKa70b.png"
         },
         "ESFJ":{
             "type_des":"내돈내산, 현실적 리뷰 너튜버",

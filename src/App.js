@@ -29,7 +29,6 @@ const App = () => {
   const [pageIdx, setPageIdx] = React.useState(0); /* page의 인덱스. button click시마다 1씩 증가함 */
   const buttonHandler = type => {
     if(mbti.hasOwnProperty(type)) mbtiController(type)
-    else console.log(`page ${pageIdx} is unknown property`)
     increasePageIdx();
   }
   const isQuestionPage = pageIdx > 0 && pageIdx < LAST_PAGE_IDX-1
@@ -50,11 +49,9 @@ const App = () => {
   }, [pageIdx]);
 
   React.useEffect(()=>{
-    console.log(mbti);
     let i = 0 ;
     for(let key in mbti)
       i += mbti[key];
-    console.log(`mbti sum : ${i}`)
   }, [mbti]);
 
   React.useEffect(()=>{

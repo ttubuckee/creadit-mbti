@@ -16,6 +16,7 @@ const Result = (props) => {
 
     return(
         <div>
+            <a href={"#kakaoShare"}><img className={"img-share-btn"} src={"/images/share_btn.svg"}/></a>
             <img className={"img-logo"} src={'/images/creadit.png'} alt={"creadit-logo"}></img>
             <div className={"div-project-title"}><span>나의 부캐찾기 프로젝트</span></div>
             <img className={"img-result-type"} src={`/images/mbti_result/${result.toLowerCase()}.png`}></img>
@@ -51,7 +52,7 @@ const Result = (props) => {
             </div>
             <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['worst-combi-type'].toLowerCase()}.png`}></img>
             <div className={"div-share"}>
-                <KakaoShareButton imgUrl={my_mbti_obj['img-url']} type={my_mbti_obj.type_des}/>
+                <a name={"kakaoShare"}><KakaoShareButton imgUrl={my_mbti_obj['img-url']} type={my_mbti_obj.type_des}/></a>
                 <a className={"share-btn"} href={`http://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}>
                     <img src={"/images/facebook_btn.png"} className={"share-btn"}/>
                 </a>

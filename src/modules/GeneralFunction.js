@@ -31,7 +31,7 @@ export const getMBTIOptions = () => {
         [{'text' : '친구들에게 같이 해보자고 공유한다', 'type' : 'E'}, 
         {'text' : '재미있었다! 다음 영상 봐야지', 'type' : 'I'}], /*  questions 3 */
 
-        [{'text' : '조회 수를 많이 받을 수 있는 콘텐츠', 'type' : 'S'}, 
+        [{'text' : '조회수를 많이 받을 수 있는 콘텐츠', 'type' : 'S'}, 
         {'text' : '한 번도 본 적 없는 신기한 콘텐츠', 'type' : 'N'}], /*  questions 4 */
 
         [{'text' : '오늘은 그만, 다음에 본다', 'type' : 'J'}, 

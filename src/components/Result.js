@@ -19,7 +19,7 @@ const Result = (props) => {
             <a href={"#kakaoShare"}><img className={"img-share-btn"} src={"/images/share_btn.svg"}/></a>
             <img className={"img-logo"} src={'/images/creadit.png'} alt={"creadit-logo"}></img>
             <div className={"div-project-title"}><span>나의 부캐찾기 프로젝트</span></div>
-            <img className={"img-result-type"} src={`/images/mbti_result/${result.toLowerCase()}.svg`}></img>
+            <img className={"img-result-type"} src={`/images/mbti_result/${result}.svg`}></img>
 
             <div className={"div-result-text-wrapper"}>
                 <div className={"div-result-type"}>{my_mbti_obj.type_des}</div>
@@ -43,14 +43,14 @@ const Result = (props) => {
                 </div>
                 <div>{my_mbti_obj["best-combi"]}</div>
             </div>
-            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['best-combi-type'].toLowerCase()}.svg`}></img>
+            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['best-combi-type']}.svg`}></img>
             <div className={"div-combination-title"}>
                 <div style={{marginRight:"2.5%"}}>
                     <span style={{fontWeight:"bold",whiteSpace:'nowrap'}}>최악조합</span>
                 </div>
                 <div>{my_mbti_obj["worst-combi"]}</div>
             </div>
-            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['worst-combi-type'].toLowerCase()}.svg`}></img>
+            <img className={"img-combi"} src={`/images/mbti_result/${my_mbti_obj['worst-combi-type']}.svg`}></img>
             <div className={"div-share"}>
                 <a name={"kakaoShare"}><KakaoShareButton imgUrl={my_mbti_obj['img-url']} type={my_mbti_obj.type_des}/></a>
                 <a className={"share-btn"} href={`http://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}>

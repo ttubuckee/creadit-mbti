@@ -153,7 +153,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"당신.. 유명해지지마, 아니 유명해져.. 유명해지지마..",
             "best-combi-type":"ENFJ",
             "worst-combi-type":"ESTJ",
-            "img-url":"https://i.esdrop.com/d/M97S9LElcp.png"
+            "img-url":"https://i.esdrop.com/d/rOXAxQ7NRG.png"
         },
         "INFJ":{
             "type_des":"너튜브는 나의 일기장! 챌린지형 너튜버",

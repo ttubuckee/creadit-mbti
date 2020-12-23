@@ -73,7 +73,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"당신이 행복하면 나도 좋아",
             "best-combi-type":"INFJ",
             "worst-combi-type":"ISTP",
-            "img-url":"https://i.esdrop.com/d/6TrmzghPQf.svg"
+            "img-url":"https://i.esdrop.com/d/wTErEZJ6DO.png"
         },
         "ENFJ":{
             "type_des":"제가 보기에는, 정보전달형 스트리머",
@@ -83,7 +83,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"니가.. 00님보다 정리 잘해? 소통 잘하냐구.. 00님 팬이라면 꼭 퍼가",
             "best-combi-type":"INFP",
             "worst-combi-type":"ISFP",
-            "img-url":"https://i.esdrop.com/d/MvNaP3mIYP.svg"
+            "img-url":"https://i.esdrop.com/d/Yuvz7wEM63.png"
         },
         "ENTP":{
             "type_des":"탑 아이돌 급 멘탈, 소통형 스트리머",
@@ -93,7 +93,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"아니 이 사람 왜 이렇게 웃겨요?",
             "best-combi-type":"INTJ",
             "worst-combi-type":"ISFJ",
-            "img-url":"https://i.esdrop.com/d/3sY0oNRjvc.svg"
+            "img-url":"https://i.esdrop.com/d/PsLnjLh5hG.png"
         },
         "ENTJ":{
             "type_des":"걸어다니는 대기업, 천상계 너튜버",
@@ -103,7 +103,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"성지순례 왔습니다.대박나게 해주세요",
             "best-combi-type":"INTP",
             "worst-combi-type":"ISFP",
-            "img-url":"https://i.esdrop.com/d/gJAVv6W8zH.svg"
+            "img-url":"https://i.esdrop.com/d/JJhaHdnhGZ.png"
         },
         "ESFP":{
             "type_des":"아니 오늘 내가, 노가리 스트리머",
@@ -113,7 +113,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"00님 일상 썰 풀어주세요!",
             "best-combi-type":"ISTJ",
             "worst-combi-type":"INTJ",
-            "img-url":"https://i.esdrop.com/d/SG6bJtxaaz.svg"
+            "img-url":"https://i.esdrop.com/d/jGJ1OsSVMr.png"
         },
         "ESFJ":{
             "type_des":"내돈내산, 현실적 리뷰 너튜버",
@@ -123,7 +123,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"공짜로 보기 죄송해서 데이터 키고 봤습니다.",
             "best-combi-type":"ISTP",
             "worst-combi-type":"INTP",
-            "img-url":"https://i.esdrop.com/d/BQxsbHLy9s.svg"
+            "img-url":"https://i.esdrop.com/d/9QpWWFXDUb.png"
         },
         "ESTP":{
             "type_des":"여러분 여기 찐입니다, 맛집 발굴형 너튜버",
@@ -133,7 +133,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"가서 돈쭐내주자. 이런 맛집은 돈으로 혼내줘야지 ㅋㅋ",
             "best-combi-type":"ISFJ",
             "worst-combi-type":"INFP",
-            "img-url":"https://i.esdrop.com/d/RQvK35Rpx8.svg"
+            "img-url":"https://i.esdrop.com/d/EN4buDyGsS.png"
         },
         "ESTJ":{
             "type_des":"신입받아라, 경력직 신입 너튜버",
@@ -143,7 +143,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"신-입 x 5",
             "best-combi-type":"ISFP",
             "worst-combi-type":"INFP",
-            "img-url":"https://i.esdrop.com/d/ppnFlWwXJT.svg"
+            "img-url":"https://i.esdrop.com/d/xpVsyVMs4y.png"
         },
         "INFP":{
             "type_des":"나만 알고싶어..유명해지지마, 소유하고 싶은 너튜버",
@@ -153,7 +153,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"당신.. 유명해지지마, 아니 유명해져.. 유명해지지마..",
             "best-combi-type":"ENFJ",
             "worst-combi-type":"ESTJ",
-            "img-url":"https://i.esdrop.com/d/kphQe7y18N.svg"
+            "img-url":"https://i.esdrop.com/d/s8lXajr7CK.png"
         },
         "INFJ":{
             "type_des":"너튜브는 나의 일기장! 챌린지형 너튜버",
@@ -163,7 +163,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"출석 체크 합니다!\n\n대댓으로 출석 쭉 올릴게요 함께 달려요!",
             "best-combi-type":"ENFP",
             "worst-combi-type":"ESTP",
-            "img-url":"https://i.esdrop.com/d/oGEhriMmt2.svg"
+            "img-url":"https://i.esdrop.com/d/VmdF8x2N6i.png"
         },
         "INTP":{
             "type_des":"이건 의도한 거에요, 분석형 너튜버",
@@ -173,7 +173,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"00님 이정도면 기획자 본인 아니신지?\n\n해석 너무 잘하시는거 아니에요?",
             "best-combi-type":"ENTJ",
             "worst-combi-type":"ESFJ",
-            "img-url":"https://i.esdrop.com/d/amo9FIrfHF.svg"
+            "img-url":"https://i.esdrop.com/d/MjsukQbxgv.png"
         },
         "INTJ":{
             "type_des":"그저 GOD, 유니버스 창시형 너튜버",
@@ -183,7 +183,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"치밀함에 소름 돋는다..\n\n이정도면 인류도 이분이 만든거 아니냐",
             "best-combi-type":"ENTP",
             "worst-combi-type":"ESFP",
-            "img-url":"https://i.esdrop.com/d/zO14COwdEY.svg"
+            "img-url":"https://i.esdrop.com/d/GLPLI98iF6.png"
         },
         "ISFP":{
             "type_des":"집이 최고야 짜릿해, 금손 vlog 너튜버",
@@ -193,7 +193,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"저 외국인들은 모르겠지..\n\n이 영상이 이렇게 웃기다는걸...\n\n지옥의 금손",
             "best-combi-type":"ESTJ",
             "worst-combi-type":"ENTP",
-            "img-url":"https://i.esdrop.com/d/uLVjUYbBVq.svg"
+            "img-url":"https://i.esdrop.com/d/fzZHP2HWMW.png"
         },
         "ISFJ":{
             "type_des":"목소리 맛집, 힐링형 ASMR",
@@ -203,7 +203,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"잘자요.. 드르륵 탁....잘자요.. 드르륵 탁....잘자요.. 드르륵 탁....잘자요.. 드르륵 탁....",
             "best-combi-type":"ESTP",
             "worst-combi-type":"ENTP",
-            "img-url":"https://i.esdrop.com/d/W8IBgv73ia.svg"
+            "img-url":"https://i.esdrop.com/d/eeBdXKBEUL.png"
         },
         "ISTP":{
             "type_des":"이건 못참지, 백과사전형 너튜버",
@@ -213,7 +213,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"나 : 아 이제 자야지\n\n유튜브 : 야 ㅋㅋ 이거 궁금하지 않냐",
             "best-combi-type":"ESFJ",
             "worst-combi-type":"INTP",
-            "img-url":"https://i.esdrop.com/d/Nec551GqxR.svg"
+            "img-url":"https://i.esdrop.com/d/Ab8MvefHrD.png"
         },
         "ISTJ":{
             "type_des":"너 밴, 매니저형",
@@ -223,7 +223,7 @@ export const getMBTIResult = (type) => {
             "best-comment":"(당근 흔들기)",
             "best-combi-type":"ESFP",
             "worst-combi-type":"INFJ",
-            "img-url":"https://i.esdrop.com/d/Hj4SMcBTNx.svg"
+            "img-url":"https://i.esdrop.com/d/3gzYzfkt4m.png"
         }
     };
     return result_data[type];

@@ -86,7 +86,7 @@ const App = () => {
             mbti={mbti}/>
         </div> : 
         <div className={classNames('not-ready-screen')}>
-          {/* <div>화면이 준비중입니다.</div> */}
+          <img src={"/images/web.svg"}/>
         </div>}
       </AppContext.Provider>
   );

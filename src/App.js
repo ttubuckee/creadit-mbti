@@ -15,7 +15,9 @@ const App = () => {
     // const script = document.createElement("script");
     // document.head.appendChild(script);
     window.onload = () => {
-      window.addEventListener("resize", ()=>setWindowSize(window.innerWidth)) /* screen width 변경 observer */
+      window.addEventListener("resize", ()=>{
+        if(window.orientation !== 90 && window.orientation !== 90) setWindowSize(window.innerWidth)
+      }) /* screen width 변경 observer */
     };       
   }, [])
   const [mbti, setMBTI] = React.useState({

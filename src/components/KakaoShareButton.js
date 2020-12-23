@@ -19,7 +19,7 @@ const KakaoShareButton = (props) => {
         container: '#kakao-link-btn',
         objectType: 'feed',
         content: {
-          title: '나의 유튜브 부캐 찾기',
+          title: '나의 부캐 찾기 프로젝트',
           description: `당신은 \"${type}\" 타입 입니다.`,
           imageUrl: imgUrl,
           link: {

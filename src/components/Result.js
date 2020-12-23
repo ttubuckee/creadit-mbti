@@ -1,5 +1,4 @@
 import React from 'react';
-import classNames from 'classnames';
 import KakaoShareButton from './KakaoShareButton';
 import Button from './Button';
 import '../css/result.css';
@@ -56,7 +55,7 @@ const Result = (props) => {
                 <a className={"share-btn"} href={`http://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}>
                     <img src={"/images/facebook_btn.png"} className={"share-btn"}/>
                 </a>
-                <a className={"share-btn"} href={`http://twitter.com/share?url=${window.location.href}`}>
+                <a className={"share-btn"} href={`http://twitter.com/share?url=${window.location.href}&hashtags=${"나의 부캐 찾기 프로젝트"}`}>
                     <img src={"/images/twitter_btn.png"} className={"share-btn"}/>
                 </a>
                 <div onClick={()=>{
@@ -72,7 +71,7 @@ const Result = (props) => {
                 </a> */}
             </div>
             <Button text={'다시하기'} style={{backgroundColor:'#1339FF', color:'white', margin: "0 auto", marginTop:"66px"}} onPress={props.onPress}/>
-            <a href="http://creadit.godomall.com/">
+            <a href="https://forms.gle/ipi2h5N4bCnZaiCm7">
                 <img className={"img-banner"} src={'/images/small_banner.png'}></img>
             </a>
             <p style={{fontWeight:"bold", textAlign:"left", margin:"0 auto",width:"90%",marginTop:"37px"}}>크리에이터로 성장할 수 있는 곳,<br/>크리에이딧이 궁금하다면?👀</p>
